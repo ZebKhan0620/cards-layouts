@@ -1,0 +1,90 @@
+/* Mobile-specific styles */
+@media screen and (max-width: 640px) {
+  /* Main container adjustments */
+  .players-container {
+    padding: 0 16px;
+  }
+
+  /* Header section */
+  .players-header {
+    margin-bottom: 2rem;
+  }
+  
+  .players-header > div {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    gap: 2rem;
+  }
+
+  .players-header > div > div {
+    width: 100%;
+  }
+
+  /* Hide vertical dividers on mobile */
+  .vertical-divider,
+  div[class*="w-[1px]"] {
+    display: none;
+  }
+
+  /* Title adjustments */
+  h1.players-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Player sections common styles */
+  div[class*="inline-flex"],
+  div[class*="flex pt-[25px]"] {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Section titles container */
+  div[class*="w-[440px]"] {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* Section title text */
+  h2[class*="text-[23.625px]"] {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Player cards container */
+  div[class*="w-[925px]"] {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 0 2rem 0 !important;
+    gap: 1rem !important;
+  }
+
+  /* List view text size */
+  span[class*="text-lg"] {
+    font-size: 0.875rem;
+  }
+
+  /* Adjust toggle switch position */
+  div[class*="items-center space-x-4"] {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Tablet adjustments if needed */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .players-container {
+    padding: 0 24px;
+  }
+
+  div[class*="w-[925px]"] {
+    width: 700px !important;
+  }
+
+  div[class*="w-[440px]"] {
+    width: 300px !important;
+  }
+}

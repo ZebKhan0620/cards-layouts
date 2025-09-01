@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  :root {
+    --color-icon-red: #d60026;
+    --color-icon-red-light: #e6002e;
+    --color-icon-red-dark: #b3001f;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-icon-red {
+    background-color: var(--color-icon-red);
+  }
+
+  .text-icon-red {
+    color: var(--color-icon-red);
+  }
+
+  .font-inter {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    /* Ensure smooth looping */
+    will-change: transform;
+  }
+}
